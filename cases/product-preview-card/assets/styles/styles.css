@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+  background-color: hsl(30deg, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  size: 14px;
+  color: hsl(30deg, 38%, 92%);
+}
+
+@media (min-width: 376px) {
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    margin: 0 auto;
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+  }
+  .card .cover .img-desktop {
+    max-width: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .card .cover .img-mobile {
+    display: none;
+  }
+  .card .content {
+    margin: 32px;
+  }
+  .card .content .category {
+    height: 15px;
+    letter-spacing: 0.3em;
+    font-size: 12px;
+  }
+  .card .content h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .card .content p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228deg, 12%, 48%);
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .card .content .prices {
+    display: flex;
+    align-items: center;
+  }
+  .card .content .prices .price-offer {
+    color: hsl(158deg, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .card .content .prices .price-full {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    text-decoration-line: line-through;
+    margin-left: 24px;
+  }
+  .button {
+    color: white;
+    background-color: hsl(158deg, 36%, 37%);
+    border: none;
+    border-radius: 8px;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition-duration: 0.5s;
+    width: 236px;
+    height: 48px;
+    margin-top: 30px;
+  }
+  .button:hover {
+    background-color: hsl(157deg, 43%, 18%);
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 375px;
+  }
+  .card {
+    grid-template-columns: 1fr;
+    margin: 28px 16px 28px 16px;
+    /*margin-top: 175px;*/
+    background-color: white;
+    display: grid;
+    border-radius: 8px;
+  }
+  .card .category {
+    letter-spacing: 0.3em;
+    font-size: 12px;
+  }
+  .card .cover .img-mobile {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-width: 100%;
+  }
+  .card .cover .img-desktop {
+    display: none;
+  }
+  .card p {
+    margin-top: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228deg, 12%, 48%);
+    font-size: 12px;
+    line-height: 23px;
+  }
+  .card .content {
+    margin: 32px;
+  }
+  .card .content .category {
+    height: 15px;
+    letter-spacing: 0.3em;
+    font-size: 12px;
+  }
+  .card .content h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .card .content p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228deg, 12%, 48%);
+    font-size: 12px;
+    line-height: 23px;
+  }
+  .card .content .prices {
+    display: flex;
+    align-items: center;
+  }
+  .card .content .prices .price-offer {
+    color: hsl(158deg, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .card .content .prices .price-full {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    text-decoration-line: line-through;
+    margin-left: 24px;
+  }
+  .button {
+    color: white;
+    background-color: hsl(158deg, 36%, 37%);
+    border: none;
+    border-radius: 8px;
+    display: grid;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition-duration: 0.5s;
+    width: 295px;
+    height: 48px;
+    margin-top: 30px;
+  }
+  .button:hover {
+    background-color: hsl(157deg, 43%, 18%);
+  }
+}
+.footer {
+  flex-shrink: 0;
+}
+.footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=styles.css.map */

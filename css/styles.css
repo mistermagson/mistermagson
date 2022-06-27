@@ -1,0 +1,27 @@
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.container .card {
+  display: flex;
+  flex-direction: column;
+}
+.container .card .cover {
+  height: 150px;
+  width: 100%;
+}
+.container .card img {
+  width: 350px;
+}
+.container .card a {
+  color: white;
+  text-decoration: none;
+  background: black;
+}
+.container .card a:hover {
+  color: black;
+  background: gray;
+}
+
+/*# sourceMappingURL=styles.css.map */

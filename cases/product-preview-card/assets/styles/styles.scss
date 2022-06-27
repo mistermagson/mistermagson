@@ -1,0 +1,231 @@
+@import "typography";
+@import "colors";
+@import "media";
+
+body{
+  background-color: $secondary;
+  font-family: $montserrat;
+}
+p{
+  size: 14px;
+  color: $secondary;
+}
+
+@media (min-width: 376px)
+{
+  .container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+  }
+  .card{
+    margin: 0 auto;
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+
+    .cover{
+      .img-desktop{
+        max-width: 100%;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+
+      }
+      .img-mobile{
+        display: none;
+      }
+    }
+
+    .content{
+      margin: 32px;
+
+      .category{
+        height: 15px;
+        letter-spacing: 0.3em;
+        font-size: 12px ;
+      }
+      h1{
+        font-family: $fraunces;
+        font-weight: 700;
+        font-size: 32px;
+
+      }
+      p{
+        font-family: $montserrat;
+        font-weight: 500;
+        color: $neutral02;
+        font-size: 14px;
+        line-height: 23px;
+      }
+      .prices{
+        display: flex;
+        align-items: center;
+
+        .price-offer{
+          color: $primary;
+          font-family: $fraunces;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+        }
+        .price-full{
+          font-family: $montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 23px;
+          text-decoration-line: line-through;
+          margin-left: 24px;
+
+        }
+      }
+
+    }
+
+  }
+  .button{
+    color: white;
+    background-color: $primary;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition-duration: 0.5s;
+    width: 236px;
+    height: 48px ;
+    margin-top: 30px;
+
+    &:hover{
+      background-color: $active;
+    }
+
+  }
+}
+
+@media (max-width: 375px) {
+  .container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 375px;
+  }
+  .card {
+    grid-template-columns: 1fr;
+    margin: 28px 16px 28px 16px;
+    /*margin-top: 175px;*/
+    background-color: white;
+    display: grid;
+    border-radius: 8px;
+
+    .category{
+      letter-spacing: 0.3em;
+      font-size: 12px ;
+    }
+    .cover{
+      .img-mobile{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        max-width: 100%;
+      }
+      .img-desktop{
+         display: none;
+       }
+    }
+
+    p{
+      margin-top: 24px;
+      font-family: $montserrat;
+      font-weight: 500;
+      color: $neutral02;
+      font-size: 12px;
+      line-height: 23px;
+    }
+    .content{
+      margin: 32px;
+
+      .category{
+        height: 15px;
+        letter-spacing: 0.3em;
+        font-size: 12px ;
+      }
+      h1{
+        font-family: $fraunces;
+        font-weight: 700;
+        font-size: 32px;
+
+      }
+      p{
+        font-family: $montserrat;
+        font-weight: 500;
+        color: $neutral02;
+        font-size: 12px;
+        line-height: 23px;
+      }
+      .prices{
+        display: flex;
+        align-items: center;
+
+        .price-offer{
+          color: $primary;
+          font-family: $fraunces;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+        }
+        .price-full{
+          font-family: $montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 23px;
+          text-decoration-line: line-through;
+          margin-left: 24px;
+
+        }
+      }
+
+    }
+
+  }
+  .button{
+    color: white;
+    background-color: $primary;
+    border: none;
+    border-radius: 8px;
+    display: grid;
+
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition-duration: 0.5s;
+    width: 295px;
+    height: 48px ;
+    margin-top: 30px;
+
+    &:hover{
+      background-color: $active;
+    }
+
+  }
+
+
+
+}
+
+.footer{
+  flex-shrink: 0;
+
+  .attribution {
+    font-size: 11px; text-align: center;
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}

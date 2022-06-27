@@ -1,0 +1,28 @@
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    .cover {
+      height: 150px;
+      width: 100%;
+    }
+    img {
+      width: 450px;
+    }
+   a{
+     color: white;
+     text-decoration: none;
+     background: black;
+     &:hover{
+       color: black;
+       background: gray;
+     }
+   }
+
+  }
+}
